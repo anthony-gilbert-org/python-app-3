@@ -1,0 +1,13 @@
+site_name: 'python-app-3'
+site_description: 'Main documentation for python-app-3'
+repo_url: https://github.com/anthony-gilbert/python-app-3
+site_author: 'Anthony Gilbert'
+edit_uri: edit/master/docs  # use the correct branch name
+
+plugins:
+  - techdocs-core
+  # remove redirects for now (or keep it only if you install the plugin)
+
+nav:
+  - Overview:
+      - Getting started: index.md

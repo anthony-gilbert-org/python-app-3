@@ -1,0 +1,24 @@
+# sample-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-app-3
+  labels:
+    app: python-app-3
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: python-app-3
+  template:
+    metadata:
+      labels:
+        app: python-app-3
+    spec:
+      containers:
+      - name: python-app-3
+        image: python-app-3:local
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 5000
