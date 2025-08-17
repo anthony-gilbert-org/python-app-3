@@ -1,5 +1,4 @@
 replicaCount: 1
-
 resources:
   limits:
     cpu: "500m"
@@ -7,3 +6,5 @@ resources:
   requests:
     cpu: "250m"
     memory: "256Mi"
+image:
+  tag: 61eb04
